@@ -1,0 +1,97 @@
+html {
+  font-family: sans-serif;
+}
+
+table {
+  border-collapse: collapse;
+  border: 2px solid rgb(200,200,200);
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+  margin:auto;
+  width: 50%;
+  height: 50%;
+  padding-top: 50px;
+}
+
+td {
+  border: 5px solid mediumblue;
+  padding: 10px 20px;
+  text-align: center;
+  height : 100px;
+  font-size: xx-large;
+}
+
+caption {
+  padding: 10px;
+}
+
+body {
+  background-color: skyblue;
+}
+
+h1 {
+  font-size: 50px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#home {
+  text-align: center;
+  font-size: 30px;
+}
+
+header {
+  background-color: red;
+  border: black;
+  border-width: 5px;
+}
+
+.time, .score {
+  text-align: left;
+  font-size: 30px; 
+}
+
+td:hover {
+  text-decoration: underline;
+}
+
+#finished, #incorrect{
+  text-align: center;
+  font-size: xx-large;
+  font-style: italic;
+}
+
+.h, .again{
+  font-size: x-large;
+  background-color: blanchedalmond;
+}
+
+#stats {
+  margin: 10px;
+  padding: 10px;
+  width: fit-content;
+  height: fit-content;
+  background-color: gold;
+  border: 2px black;
+  border-style: double;
+}
+ 
+#leaderboard{
+  text-align: center;
+  font-size: x-large;
+  font-style: italic;
+}
+
+
+@media only screen and (max-width: 768px)
+  {
+    #header{width: 50%;}
+    #home {width: 50%;}
+    #stats{width: 25%;}
+    #leaderboard{width: 65%;}
+    #incorrect{width: 30%;}
+    #finished{width: 30%;}
+    #table{
+    width: 50%;
+    height: 50%;}
+  }
+

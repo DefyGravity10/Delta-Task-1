@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="Deltatask.css">
+  </head>
+  <body>
+    <header id="header">
+      <center><h1>MESMERIZING NUMBERS</h1></center>
+    </header>
+    <main>
+      <div id="home"> 
+      <h2>Welcome CHALLANGER!</h2>
+      <p>I am Salvadore Dargan, and I have summoned you to show me that you can COUNT. Only then shall I deem you to be <strong>worthy of your <em>Existence</em></strong></p>
+      <h2>Select difficulty!!</h2>
+      <p><em>Choose wisely, I shall <strong>not</strong> lend a helping hand</em></p>
+      <input class="h" type="button" value="Amateur" onclick="generate_table(3)">
+      <input class="h" type="button" value="Intermediate" onclick="generate_table(4)">
+      <input class="h" type="button" value="Legendary" onclick="generate_table(5)">
+      <p>Remember, clock starts <em>ticking</em> the moment you make your <em>first move!!</em></p>
+      <p>Good Luck challenger, you might need it!</p>
+      </div>
+
+      <div id="stats">
+        <p class="time"><strong>00:</strong><strong id="minutes">00</strong><strong>:</strong><strong id="seconds">00</strong></p>
+        <p class="score"><strong>Score: <strong id="scores">0</strong></p>
+      </div>
+      <div id="table"></div>
+      <div id="incorrect">
+        <h2>UNWORTHY</h2>
+        <p>I urge you to IMPROVE and REDEEM yourself!!</p>
+        <p>For now, FAREWELL!</p>
+        <p>Your score: <h2 id="score"></h2></p>
+        <input class="again" type="button" value="Start Again" onclick="startagain()">
+      </div>
+      <div id="finished">
+        <h2>CONGRATULATIONS CHALLENGER</h2>
+        <h2>YOU ARE WORTHY!!</h2>
+        <p>Score: <h2 id="score2"></h2></p>
+        <input class="h" type="button" value="Next" onclick="generate_leaderboard()";>
+      </div>
+      <div id="leaderboard">
+        <h2>The 5 best times of your level has been displayed below</h2>
+        <h1>LEADERBOARD!!</h1>
+        <ol>
+        <li id="000"></li>
+        <li id="001"></li>
+        <li id="002"></li>
+        <li id="003"></li>
+        <li id="004"></li>
+        </ol>
+        <p>DID YOU MAKE IT CHALLENGER??</p>
+        <input class="again" type="button" value="Start Again" onclick="startagain()">
+      </div>
+    <script src="tryj.js"></script>
+    </main>
+  </body> 
+</html>
